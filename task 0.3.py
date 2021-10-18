@@ -1,3 +1,3 @@
-words=["Hello Tshepo"]
-for Tshepo in words:
-  print(Tshepo+"!")
+def hello(Tshepo):
+  print(f"Hello {Tshepo}!")
+  
