@@ -1,3 +1,4 @@
-def hello(Tshepo):
-  print(f"Hello {Tshepo}!")
+def hello(name):
+  print(f"Hello {name}!")
+  
   
