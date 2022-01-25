@@ -1,13 +1,25 @@
-def convert_temp(scale=None, source_temp=None):
-    if scale == "F":
-        return(source_temp - 32.0) * (5.0/9.0)
-    elif scale == "C":
-        return(source_temp * (9.0/5.0)) + 32.0
-    else:
-        print("Needs to be (C) or (F)!")
+def covert_to_Fahrenheit(x):
 
-scale = input("Select (F) or (C): " )
-source_temp = int(input("What is the temperature: " ))
-m = convert_temp(scale, source_temp)
-print(source_temp, "degrees", scale, "is", m, "degrees", scale)
+    Celsius = x
 
+    Fahrenheit = (Celsius * 1.8) + 32
+
+    print("%.2f Celsius = %.2f Fahrenheit" %( Celsius, Fahrenheit))
+
+
+
+
+
+def covert_to_Celsius(y):
+
+    Fahrenheit = y
+
+    Celsius = (Fahrenheit - 32) * 0.556
+
+    print("%.2f Fahrenheit = %.2f Celsius" %( Fahrenheit, Celsius))
+
+
+
+covert_to_Celsius(65)
+
+covert_to_Fahrenheit(13)
