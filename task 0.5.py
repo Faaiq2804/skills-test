@@ -1,15 +1,11 @@
-a=5
-b=8
-c=9
+def area_of_triangle(x, y, z):
 
-a = float(input('5'))
+    s = ((x + y + z) / 2)
 
-b = float(input('8'))
+    area = (s*(s - x) * (s - y) * (s - z))**0.5
 
-c = float(input('9'))
+    print(area)
 
-s = (a + b + c)/2
 
-Area = (s * (s - a) * (s - b) * (s - c))**0.5
 
-print('The area of the triangle is %0.2f' %Area)
+area_of_triangle(16,20,30)
