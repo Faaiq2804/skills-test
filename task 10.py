@@ -1,6 +1,14 @@
-s1=("house")
-s2=("home:")
-a=list(set(s1)&set(s2))
-print("The common letters are:")
-for i in a:
-    print(i)
+def common_words(str1, str2):
+
+
+    s1 = set(str1)
+
+    s2 = set(str2)
+
+    list = (s1 & s2)
+
+    print("Common letter: {}" .format(list))
+
+
+
+common_words("aeroplane", "spaceship")
