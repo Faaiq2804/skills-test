@@ -1,5 +1,18 @@
-num = 34
-if (num % 2) == 0:
-   print("num is Even".format(num))
-else:
-   print("num is Odd".format(num))
+def even_or_odd(num):
+
+  remainder = num % 2
+  if remainder==0:
+  
+
+    print("even")
+
+  else:
+
+    print("odd")
+
+
+
+
+(even_or_odd(13))
+
+(even_or_odd(18))
