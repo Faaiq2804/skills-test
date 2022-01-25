@@ -1,8 +1,14 @@
-word = "pizzA"
-blank_word = ""
-vowels = ["a", "e", "i", "o", "u","A", "E", "I", "O", "U"]
+def vowels_only(word):
 
-for letter in word:
-  if letter in vowels:
-    blank_word = letter
-  print(blank_word)
+
+    list_vowels = ("a", "e", "i", "o", "u", "A", "E", "I", "O", "U")
+
+    for i in word:
+
+        if i not in list_vowels:
+
+            word = word.replace(i, " ")
+
+    print(word)
+
+vowels_only("FaaiqAbrahams")
