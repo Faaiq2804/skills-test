@@ -5,9 +5,9 @@ def common_words(str1, str2):
 
     s2 = set(str2)
 
-    list = (s1 & s2)
+    string = {s1 , s2}
 
-    print("Common letter: {}" .format(list))
+    print("Common letter: {}" .join(string))
 
 
 
