@@ -1,14 +1,13 @@
 def even_or_odd(num):
 
-  remainder = num % 2
-  if remainder==0:
+  if num % 2==0:
   
 
-    print("even")
+    print("Even")
 
   else:
 
-    print("odd")
+    print("Odd")
 
 
 
