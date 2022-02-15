@@ -1,14 +1,13 @@
-def vowels_only(word):
+text='phIlosophy'
+def check_vowels(text):
+  list=("a","e",'i',"o","u","A","E","I","O","U")
+  word=""
+  for char in text:
 
+        if char in  list:
+            if char!=word:
+              word = word+char+ ""
+  return word
 
-    list_vowels = ("a", "e", "i", "o", "u", "A", "E", "I", "O", "U")
-
-    for i in word:
-
-        if i not in list_vowels:
-
-            word = word.replace(i, " ")
-
-    print(word)
-
-vowels_only("FaaiqAbrahams")
+word=check_vowels(text).lower()
+print("vowels:"+str(set(word)))
