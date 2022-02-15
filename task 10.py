@@ -1,14 +1,7 @@
-def common_words(str1, str2):
+s1=("Manchester")
+s2=("liverpool")
+a=(set(s1)& set(s2))
 
 
-    s1 = set(str1)
-
-    s2 = set(str2)
-
-    string = {s1 , s2}
-
-    print("Common letter: {}" .join(string))
-
-
-
-common_words("aeroplane", "spaceship")
+for i in a:
+    print('common letters:'+str(set(i)))
