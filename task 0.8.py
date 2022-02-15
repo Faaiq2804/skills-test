@@ -1,36 +1,15 @@
-num=int(120)
-
 def convert_to_time(num):
+  hour = num//60
+  if hour==1:
+   hour_string='hour'
+  else:
+    hour_string='hours'
 
-    hour = num//60
-    return hour
-hour = convert_to_time(num)
+  minutes=num-(hour*60) 
+  if minutes==1:
+    minute_string='minute'
+  else:
+    minute_string='minutes'
 
-def Convert_to_time(num):
-    minute = num%60
-    return minute
-minute = Convert_to_time(num)
-if hour == 1 and minute == 1:
-
-    print(hour, "hour", minute, "minute")
-
-elif hour > 1 and minute == 1:
-
-    print(hour, "hours", minute, "minute")
-
-elif hour == 1 and minute > 1:
-
-    print(hour, "hour", minute, "minutes")
-
-elif hour > 1 and minute > 1:
-
-    print(hour, "hours", minute, "minutes")
-
-elif hour < 1 and minute> 1:
-    print(minute, "minutes")
-
-elif hour == 1 and minute <1:
-    print(hour, "hour")
-    
-elif hour > 1 and minute < 1:
-    print(hour, "hours")
+  print(str(hour)+''+str(hour_string)+''+str(minutes)+''+str(minute_string))
+convert_to_time(163)
