@@ -1,4 +1,3 @@
-text='phIlosophy'
 def check_vowels(text):
   list=("a","e",'i',"o","u","A","E","I","O","U")
   word=""
@@ -6,8 +5,8 @@ def check_vowels(text):
 
         if char in  list:
             if char!=word:
-              word = word+char+ ""
+              word = word+char+" "
   return word
-
+text= set('phIlosophy')
 word=check_vowels(text).lower()
-print("vowels:"+str(set(word)))
+print("vowels:"+str(word))
