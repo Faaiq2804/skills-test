@@ -11,5 +11,5 @@ def convert_to_time(num):
   else:
     minute_string='minutes'
 
-  print(str(hour)+''+str(hour_string)+''+str(minutes)+''+str(minute_string))
+  print(str(hour)+''+str(hour_string)+', '+str(minutes)+''+str(minute_string))
 convert_to_time(163)
