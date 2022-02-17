@@ -1,25 +1,17 @@
-def covert_to_Fahrenheit(x):
-
-    Celsius = x
-
-    Fahrenheit = (Celsius * 1.8) + 32
-
-    print("%.2f Celsius = %.2f Fahrenheit" %( Celsius, Fahrenheit))
-
+def convert_to_Fahrenheit(x):
+    Celsius=x
+    x = (Celsius*1.8)+32
+    return x
+    
+print(convert_to_Fahrenheit(32))
 
 
 
 
-def covert_to_Celsius(y):
-
+def convert_to_Celsius(y):
+     
     Fahrenheit = y
+    y = (Fahrenheit - 32) * 0.556
+    return y
 
-    Celsius = (Fahrenheit - 32) * 0.556
-
-    print("%.2f Fahrenheit = %.2f Celsius" %( Fahrenheit, Celsius))
-
-
-
-covert_to_Celsius(65)
-
-covert_to_Fahrenheit(13)
+print(convert_to_Celsius(110))
