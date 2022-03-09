@@ -1,7 +1,17 @@
-s1=("Manchester")
-s2=("liverpool")
-a=(set(s1)& set(s2))
+def common_words(word_1, word_2):
 
+    s1 = set(word_1.lower())
 
-for i in a:
-    print('common letters:'+str(i))
+    s2 = set(word_2.lower())
+
+    list = (s1 & s2)
+
+    for char in list:
+
+        char = ', '.join(list)
+
+    print("Common characters: ",char)
+
+   
+
+common_words("Liverpool", "BarcElona")
