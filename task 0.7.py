@@ -1,17 +1,13 @@
 def convert_to_Fahrenheit(x):
-    Celsius=x
-    x = (Celsius*1.8)+32
-    return x
+      return (x*1.8)+32
+    
     
 print(convert_to_Fahrenheit(32))
 
 
-
-
 def convert_to_Celsius(y):
      
-    Fahrenheit = y
-    y = (Fahrenheit - 32) * 0.556
-    return y
+    return (y - 32) * 0.556
+    
 
 print(convert_to_Celsius(110))
