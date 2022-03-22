@@ -12,4 +12,4 @@ def max_num(numb1, numb2, numb3):
   else:
     return "It's a tie!"
 print(max_num(-10, 0, 10))
-print(max_num(2, 3, 3)
+print(max_num(2, 3, 3))
