@@ -8,4 +8,4 @@ def check_vowels(text):
   return word
 text= set('phIlosophy')
 word=check_vowels(text).lower()
-print("vowels:"+str(word))d))
+print("vowels:"+str(word))
